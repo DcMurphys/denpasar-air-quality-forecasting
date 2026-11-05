@@ -1036,7 +1036,7 @@ it reads: the clean daily data and the forecast in `data/processed/`, and the mo
 ### 1. Download the project
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/DcMurphys/denpasar-air-quality-forecasting.git
 cd denpasar-air-quality-forecasting
 ```
 
@@ -1209,6 +1209,18 @@ https://doi.org/10.1016/j.envint.2020.105603
 Wu, C., Li, K., & Bai, K. (2020). Validation and calibration of CAMS PM2.5 forecasts using in situ
 PM2.5 measurements in China and United States. *Remote Sensing, 12*(22), Article 3813.
 https://doi.org/10.3390/rs12223813
+
+## License
+
+The code in this repository (the notebook, the `aqi_forecasting` package, the dashboard, and the
+tests) is released under the [MIT License](LICENSE). You may reuse it, including commercially, as
+long as you keep the copyright notice.
+
+The MIT License does **not** cover material owned by others:
+
+* **Data:** the Kaggle datasets and the CAMS estimates they contain stay under their original
+  terms. Check each dataset's page before reusing the data.
+* **Photos:** each photo in this README stays under the licence named in its caption.
 
 ---
 

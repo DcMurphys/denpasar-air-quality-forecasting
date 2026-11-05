@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69"]
+requires = ["setuptools>=77"]  # 77+ reads the SPDX `license` string
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,6 +8,8 @@ version = "0.1.0"
 description = "Shared feature engineering, metrics, and configuration for Denpasar AQI forecasting."
 readme = "README.md"
 requires-python = ">=3.13"
+license = "MIT"
+license-files = ["LICENSE"]
 # Exact pins live in requirements.txt and environment.yml.
 dependencies = ["numpy", "pandas"]
 
