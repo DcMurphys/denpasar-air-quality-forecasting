@@ -1,0 +1,13 @@
+# Dashboard runtime, pinned (versions verified in conda env lab_venv on 2026-11-04).
+# Single source of the runtime pins. Streamlit Community Cloud reads this file because a
+# dependency file next to the entrypoint (dashboard/app.py) takes precedence over the root
+# environment.yml. The app finds the shared package in src/ by itself (see app.py), so no
+# `-e .` line is needed here.
+# For pip-based environments only. lab_venv is managed with environment.yml; do not
+# `pip install -r` into it, because mixing pip and conda copies corrupts the env.
+streamlit==1.66.1
+altair==6.3.0         # charts
+pandas==2.3.3
+numpy==2.5.4
+pyarrow==20.0.0       # parquet artifacts
+scipy==1.18.1         # Spearman correlation in pandas
