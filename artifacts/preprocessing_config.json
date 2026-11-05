@@ -1,0 +1,67 @@
+{
+  "target": "us_aqi_mean",
+  "horizon": 7,
+  "target_columns": [
+    "aqi_t+1",
+    "aqi_t+2",
+    "aqi_t+3",
+    "aqi_t+4",
+    "aqi_t+5",
+    "aqi_t+6",
+    "aqi_t+7"
+  ],
+  "embargo_days": 6,
+  "feature_columns": [
+    "aqi_t",
+    "aqi_t-1",
+    "aqi_t-2",
+    "aqi_roll7_mean",
+    "aqi_roll7_max",
+    "aqi_roll7_std",
+    "aqi_roll30_mean",
+    "aqi_roll30_max",
+    "aqi_roll30_std",
+    "precip_sum_3d",
+    "precip_sum_7d",
+    "sin_doy_1",
+    "cos_doy_1",
+    "sin_doy_2",
+    "cos_doy_2",
+    "pm2_5_mean",
+    "pm10_mean",
+    "ozone_mean",
+    "nitrogen_dioxide_mean",
+    "sulphur_dioxide_mean",
+    "carbon_monoxide_mean",
+    "precipitation_sum",
+    "precipitation_hours",
+    "wind_speed_10m_max",
+    "shortwave_radiation_sum",
+    "temperature_2m_mean",
+    "post_cams_49r1"
+  ],
+  "split_ratios": {
+    "train": 0.65,
+    "val": 0.15,
+    "test": 0.2
+  },
+  "split_bounds": {
+    "train": [
+      "2022-09-03",
+      "2025-05-06"
+    ],
+    "val": [
+      "2025-05-13",
+      "2025-12-19"
+    ],
+    "test": [
+      "2025-12-26",
+      "2026-10-23"
+    ]
+  },
+  "cams_upgrades": {
+    "post_cams_49r1": "2024-11-12",
+    "post_cams_50r1": "2026-05-12"
+  },
+  "data_version": "b818fb605cff"
+}

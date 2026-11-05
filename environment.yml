@@ -1,0 +1,14 @@
+name: lab_venv
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.13
+  - pandas=2.3.3
+  - scikit-learn=1.6.1
+  - numpy=2.5.4      # pinned 2026-11-04 (scope Q1): model verified to load with it
+  - pyarrow
+  - streamlit>=1.36
+  - pytest
+  - ruff
+  - pip

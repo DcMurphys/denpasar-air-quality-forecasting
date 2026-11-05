@@ -1,0 +1,15 @@
+# Development tools and notebook extras. Same caveat as requirements.txt:
+# for pip-based environments only, not for lab_venv.
+-r requirements.txt
+
+# Tests and linting
+scikit-learn==1.6.1   # loads the .joblib model in the feature-parity test; the app never does (Q3)
+pytest==9.2.0
+ruff==0.17.3
+
+# Notebook extras (versions printed in NB §3.1 on Kaggle)
+statsmodels==0.15.0
+optuna==5.0.0
+# Kaggle versions not recorded in the notebook; left unpinned
+matplotlib
+seaborn

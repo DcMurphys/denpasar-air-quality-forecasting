@@ -1,0 +1,30 @@
+# Tridatu palette (white, red, black), checked for WCAG AA text contrast.
+# AQI category colours are NOT themed: they follow the US EPA scale (NB §3.2).
+[theme]
+base = "light"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F7F7"
+textColor = "#111111"            # 18.9:1 on white
+primaryColor = "#D7192D"         # Tridatu red, 5.2:1 on white
+linkColor = "#D7192D"
+linkUnderline = true             # links are not identified by colour alone
+borderColor = "#D9D9D9"
+# Inter from Google Fonts, loaded by the viewer's browser; falls back to the system sans-serif.
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+headingFontWeights = [700, 600]
+showSidebarBorder = true         # separates the white sidebar from the white content
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F7F7"
+textColor = "#111111"
+primaryColor = "#D7192D"         # 4.8:1 on the #F7F7F7 active-item background
+linkColor = "#D7192D"
+borderColor = "#D9D9D9"
+
+[client]
+# Users see a generic message; tracebacks go to the console only (scope §7).
+showErrorDetails = "none"
+
+[browser]
+gatherUsageStats = false

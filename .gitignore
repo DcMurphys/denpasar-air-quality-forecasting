@@ -1,0 +1,46 @@
+# Python bytecode and build output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Claude Code: project instructions, local settings, and launch configs
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# Prompts used to drive the AI-assisted build (not part of the app)
+prompts/
+docs/
+
+# Logs
+*.log
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
