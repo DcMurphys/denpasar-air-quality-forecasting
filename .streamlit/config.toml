@@ -9,8 +9,12 @@ primaryColor = "#D7192D"         # Tridatu red, 5.2:1 on white
 linkColor = "#D7192D"
 linkUnderline = true             # links are not identified by colour alone
 borderColor = "#D9D9D9"
-# Inter from Google Fonts, loaded by the viewer's browser; falls back to the system sans-serif.
-font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+# Typography (keep in sync with DISPLAY_FONT / BODY_FONT in dashboard/views/components/palette.py):
+# - Headings: Playfair Display, an elegant high-contrast serif, from Google Fonts.
+# - Body: Times New Roman where installed (Windows, macOS). Elsewhere (Android, Linux) Tinos,
+#   a Google Font with the same letter widths as Times New Roman, so layouts do not shift.
+headingFont = "Playfair Display:https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap, Georgia, serif"
+font = "Times New Roman, Tinos:https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap, Times, serif"
 headingFontWeights = [700, 600]
 showSidebarBorder = true         # separates the white sidebar from the white content
 

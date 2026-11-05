@@ -10,7 +10,14 @@ from html import escape
 import streamlit as st
 
 from dashboard.views.components.icons import icon_html
-from dashboard.views.components.palette import BLACK, BORDER, MUTED_TEXT, RED, WHITE
+from dashboard.views.components.palette import (
+    BLACK,
+    BORDER,
+    DISPLAY_NUMBERS,
+    MUTED_TEXT,
+    RED,
+    WHITE,
+)
 
 
 @dataclass(frozen=True)
@@ -34,8 +41,8 @@ _LABEL_STYLE = (
     "display:flex;gap:0.35rem;align-items:flex-start;"
 )
 _VALUE_STYLE = (
-    f"font-size:1.5rem;font-weight:700;color:{BLACK};line-height:1.2;margin:0.3rem 0 0.35rem;"
-    "overflow-wrap:anywhere;"
+    f"{DISPLAY_NUMBERS}font-size:1.5rem;font-weight:700;color:{BLACK};line-height:1.2;"
+    "margin:0.3rem 0 0.35rem;overflow-wrap:anywhere;"
 )
 
 

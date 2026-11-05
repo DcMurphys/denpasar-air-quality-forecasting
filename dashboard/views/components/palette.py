@@ -13,6 +13,14 @@ MUTED_TEXT = "#555555"  # 7.5:1 on white
 SECONDARY_TEXT = "#444444"  # captions, 9.7:1 on white
 BORDER = "#D9D9D9"
 
+# Typography; the web fonts are loaded by .streamlit/config.toml (headingFont, font).
+# Display: page and section headings, plus the large numbers in cards. Lining figures keep
+# digits on the baseline, so numbers read like a table rather than like prose.
+DISPLAY_FONT = "'Playfair Display', Georgia, serif"
+DISPLAY_NUMBERS = f"font-family:{DISPLAY_FONT};font-variant-numeric:lining-nums;"
+# Body: everything else, including chart text. Tinos has Times New Roman's letter widths.
+BODY_FONT = "'Times New Roman', Tinos, Times, serif"
+
 ASSET_DIR = Path(__file__).resolve().parents[2] / "assets"
 # Bunga jepun sidebar figure: the owner's jepun_fixed.svg (2026-11-04, 7.2 MB with embedded PNG
 # layers) rendered to a 280 px PNG (66 KB), twice its 140 px display width. The background is

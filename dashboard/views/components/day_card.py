@@ -11,7 +11,15 @@ import streamlit as st
 
 from dashboard.models.forecast import FORECAST, OBSERVED, DayOutlook
 from dashboard.views.components.aqi_badge import badge_html
-from dashboard.views.components.palette import BLACK, BORDER, MUTED_TEXT, RED, WHITE
+from dashboard.views.components.palette import (
+    BLACK,
+    BORDER,
+    DISPLAY_FONT,
+    DISPLAY_NUMBERS,
+    MUTED_TEXT,
+    RED,
+    WHITE,
+)
 from dashboard.views.i18n import Translator, category_key
 
 _GRID = (
@@ -22,8 +30,11 @@ _CARD = (
     f"background:{WHITE};border:1px solid {BORDER};border-left:6px solid {RED};"
     "border-radius:0.5rem;padding:1rem 1.1rem;"
 )
-_TITLE = f"font-size:1.05rem;font-weight:600;color:{BLACK};"
-_VALUE = f"font-size:2.5rem;font-weight:700;color:{BLACK};line-height:1.1;margin:0.35rem 0;"
+_TITLE = f"font-family:{DISPLAY_FONT};font-size:1.1rem;font-weight:700;color:{BLACK};"
+_VALUE = (
+    f"{DISPLAY_NUMBERS}font-size:2.5rem;font-weight:700;color:{BLACK};line-height:1.1;"
+    "margin:0.35rem 0;"
+)
 _NOTE = f"font-size:0.95rem;color:{MUTED_TEXT};margin:0.4rem 0 0.6rem;"
 _ADVICE = f"font-size:1.05rem;color:{BLACK};line-height:1.5;margin:0.35rem 0 0;"
 

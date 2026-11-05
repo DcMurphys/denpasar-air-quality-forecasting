@@ -10,7 +10,7 @@ import altair as alt
 import pandas as pd
 
 from aqi_forecasting.config import AQI_CATEGORIES, TARGET, TREND_ROLLING_WINDOW
-from dashboard.views.components.palette import BLACK, MUTED_TEXT
+from dashboard.views.components.palette import BLACK, BODY_FONT, MUTED_TEXT
 from dashboard.views.components.palette import RED as RED_ACCENT
 from dashboard.views.i18n import Translator
 
@@ -21,8 +21,8 @@ YEAR_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4"]
 DAILY_GRAY = "#9a9a9a"
 GRID = "#e6e6e6"
 CHART_HEIGHT = 320
-# With a fallback, so charts never render in the browser's default serif before Inter loads.
-CHART_FONT = "Inter, sans-serif"
+# Charts use the body serif (Times New Roman, else Tinos), matching the surrounding text.
+CHART_FONT = BODY_FONT
 # Minimum chart text sizes (UX review, priority 3): axis/value labels 13 px, titles 14 px.
 CHART_TEXT_SIZE = 13
 CHART_TITLE_SIZE = 14
