@@ -12,11 +12,9 @@ The analysis lives in [`notebooks/air-quality-predictive-analysis.ipynb`](notebo
 This README retells the notebook in plain language, section by section, without any code. The
 results also feed a bilingual (Indonesian and English) Streamlit dashboard in [`dashboard/`](dashboard/).
 
-<!-- STREAMLIT CLOUD PLACEHOLDER: after deploying, replace every YOUR-APP-NAME in this README
-     (here and in How to Run) with the app's name on Streamlit Community Cloud. -->
-[![Open the dashboard in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://YOUR-APP-NAME.streamlit.app)
+[![Open the dashboard in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://dcmurphys-denpasar-air-quality-forecasting.streamlit.app)
 
-**Try the dashboard online:** [https://YOUR-APP-NAME.streamlit.app](https://YOUR-APP-NAME.streamlit.app), or run it on your own computer (see
+**Try the dashboard online:** [https://dcmurphys-denpasar-air-quality-forecasting.streamlit.app](https://dcmurphys-denpasar-air-quality-forecasting.streamlit.app), or run it on your own computer (see
 [How to Run](#how-to-run)).
 
 ## At a glance
@@ -444,10 +442,7 @@ The exploration answers four questions:
 The risk lies less in a "bad season" than in **short, sharp episodes**, which is exactly what a
 daily forecast is meant to catch.
 
-<!-- FIGURE PLACEHOLDER: yearly average AQI and share of days above AQI 100, with partial years marked (notebook Section 4.5.2).
-     Save the image as assets/readme/annual_kpis.png, then replace this comment with:
-     ![Yearly average AQI and share of days above AQI 100](assets/readme/annual_kpis.png)
--->
+![Yearly average AQI and share of days above AQI 100](assets/readme/annual_kpis.png)
 
 #### Monthly pattern per year
 
@@ -1024,8 +1019,7 @@ conditions, and a 7-day forecast turns that knowledge into advance warning.
 
 ## How to Run
 
-**The quickest way:** open the online dashboard at [https://YOUR-APP-NAME.streamlit.app](https://YOUR-APP-NAME.streamlit.app). Nothing to install.
-<!-- STREAMLIT CLOUD PLACEHOLDER: replace YOUR-APP-NAME with the deployed app's address. -->
+**The quickest way:** open the online dashboard at [https://dcmurphys-denpasar-air-quality-forecasting.streamlit.app](https://dcmurphys-denpasar-air-quality-forecasting.streamlit.app). Nothing to install.
 
 To run it on your own computer, follow the steps below. You don't need to run the notebook to use
 the dashboard. The repository already includes the files
